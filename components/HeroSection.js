@@ -1,16 +1,18 @@
 /* This example requires Tailwind CSS v2.0+ */
 import { Fragment } from 'react'
-import { Popover, Transition } from '@headlessui/react'
+import { Popover, Transition, Tab } from '@headlessui/react'
 import { MenuIcon, XIcon } from '@heroicons/react/outline'
+import { useState } from 'react'
 
 const navigation = [
-  { name: 'Product', href: '#' },
+  { name: 'Product', href: '/product' },
   { name: 'Features', href: '#' },
   { name: 'Marketplace', href: '#' },
   { name: 'Company', href: '#' },
 ]
 
-export default function Example() {
+
+export default function HeroSection() {
   return (
     <div className="relative bg-white overflow-hidden">
       <div className="max-w-7xl mx-auto">
@@ -121,10 +123,10 @@ export default function Example() {
                 fugiat veniam occaecat fugiat aliqua.
               </p>
               <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
-                <div className="rounded-md shadow">
+                <div className="rounded-lg shadow">
                   <a
                     href="#"
-                    className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 md:py-4 md:text-lg md:px-10"
+                    className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-lg text-white bg-indigo-600 hover:bg-indigo-700 md:py-4 md:text-lg md:px-10"
                   >
                     Get started
                   </a>
